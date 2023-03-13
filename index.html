@@ -1,1 +1,67 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+	<title>House Rent Website</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Listings</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="hero">
+			<h1>AS Rental Service Ltd</h1>
+			<p>Find your dream home today!</p>
+		</section>
+		<section class="search">
+			<h2>Search Listings</h2>
+			<form action="#" method="get">
+				<label for="location">Location:</label>
+				<input type="text" id="location" name="location" required>
+				<label for="bedrooms">Bedrooms:</label>
+				<select id="bedrooms" name="bedrooms">
+					<option value="1">1 Bedroom</option>
+					<option value="2">2 Bedrooms</option>
+					<option value="3">3 Bedrooms</option>
+				</select>
+				<label for="price">Price:</label>
+				<input type="range" id="price" name="price" min="0" max="5000" step="100">
+				<input type="submit" value="Search">
+			</form>
+		</section>
+		<section class="listings">
+			<h2>Featured Listings</h2>
+			<div class="listing">
+				<img src="images/house1.jpg" alt="House 1">
+				<h3>Beautiful House for Rent</h3>
+				<p>3 Bedrooms, 2 Bathrooms, $2000/month</p>
+				<a href="#">View Details</a>
+			</div>
+			<div class="listing">
+				<img src="images/house2.jpg" alt="House 2">
+				<h3>Spacious House for Rent</h3>
+				<p>4 Bedrooms, 3 Bathrooms, $2500/month</p>
+				<a href="#">View Details</a>
+			</div>
+			<div class="listing">
+				<img src="images/house3.jpg" alt="House 3">
+				<h3>Charming House for Rent</h3>
+				<p>2 Bedrooms, 1 Bathroom, $1500/month</p>
+				<a href="#">View Details</a>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; AS Rental Service Ltd. All Rights Reserved.</p>
+	</footer>
+</body>
+</html>
